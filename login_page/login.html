@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login User/Admin</h2>
+    <form id="login-form">
+      <label for="mobile">Mobile Number</label>
+      <input type="text" id="mobile" placeholder="Enter your 10 digit mobile number" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required />
+
+      <button type="submit">Login</button>
+    </form>
+    <p id="error-msg" class="error-msg"></p>
+    <p class="note">Don’t have an account? <a href="../Registration_form/registration.html">Register here</a></p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

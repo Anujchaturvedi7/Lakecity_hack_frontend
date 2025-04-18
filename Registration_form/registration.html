@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Portal</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <h1>Register as:</h1>
+    <div class="btn-container">
+        <button onclick="showForm('user')">User</button>
+        <button onclick="showForm('admin')">Admin</button>
+    </div>
+
+    <!-- User Form -->
+    <form id="userForm" class="form" onsubmit="return validateUserForm()">
+        <h2>User Registration</h2>
+        <input type="text" id="userName" placeholder="Name" required>
+        <input type="text" id="userMobile" placeholder="Mobile Number" required>
+        <input type="email" id="userEmail" placeholder="Email" required>
+        <input type="password" id="userPassword" placeholder="Password" required>
+        <button type="submit">Register as User</button>
+    </form>
+
+    <!-- Admin Form -->
+    <form id="adminForm" class="form" onsubmit="return validateAdminForm()">
+        <h2>Admin Registration</h2>
+        <input type="text" id="adminName" placeholder="Name" required>
+        <input type="text" id="adminMobile" placeholder="Mobile Number" required>
+        <input type="email" id="adminEmail" placeholder="Email" required>
+        <input type="text" id="adminPasskey" placeholder="Passkey" required>
+        <input type="password" id="adminPassword" placeholder="Password" required>
+        <button type="submit">Register as Admin</button>
+    </form>
+
+    <script src="registration.js"></script>
+</body>
+</html>
